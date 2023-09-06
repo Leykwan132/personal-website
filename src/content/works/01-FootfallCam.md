@@ -1,5 +1,5 @@
 ---
-title: "FootfalCam"
+title: "FootfallCam"
 publishedAt: "May2023 - Aug2023"
 description: "Sungai Long, Malaysia"
 slug: "footfallcam"
