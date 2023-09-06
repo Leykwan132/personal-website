@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Kwan 👋",
   // profile: "/profile.webp",
   description:
-    "A *malaysian*, software engineer and aspiring machine learning enthusiast graduating from the University of Wisconsin-Madison in Fall 2023.",
+    "A *Malaysian*, software engineer and aspiring machine learning enthusiast graduating from the University of Wisconsin-Madison in Fall 2023.",
   socials: [
     {
       label: "Linkedin",
@@ -25,6 +25,10 @@ const presentation: Presentation = {
     {
       label: "Github",
       link: "https://github.com/Leykwan132",
+    },
+    {
+      label: "Resume",
+      link: "https://www.slideshare.net/ChooLeyKwan1/mlresumedocxpdf",
     },
   ],
 };
