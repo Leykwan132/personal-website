@@ -1,6 +1,9 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
 import { fade } from "astro:transitions";
+import { Image } from "astro:assets";
+import footfallcamImg from "@/images/footfallcam.jpeg";
+import fusionexImg from "@/images/fusionex.jpeg";
 
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
@@ -28,7 +31,31 @@ const { Content } = await work.render();
     transition:animate={fade({ duration: "0.3s" })}
   >
     <header role="presentation">
-      <p class="italic">{work.data.description}</p>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          {
+            work.data.slug === "footfallcam" ? (
+              <Image
+                src={footfallcamImg}
+                alt="ffc"
+                class="h-14 w-14 rounded-full object-scale-down"
+                transition:name="ffc"
+              />
+            ) : (
+              <Image
+                src={fusionexImg}
+                alt="fusionex"
+                class="h-14 w-14 rounded-full object-scale-down"
+                transition:name="fusionex"
+              />
+            )
+          }
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-medium text-white">{work.data.title}</p>
+            <p class="italic">{work.data.description}</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <Content />

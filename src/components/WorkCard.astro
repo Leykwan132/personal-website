@@ -25,12 +25,14 @@ const { title, publishedAt, description, slug } = Astro.props;
           src={footfallcamImg}
           alt="ffc"
           class="h-12 w-12 rounded-full object-scale-down "
+          transition:name="ffc"
         />
       ) : (
         <Image
           src={fusionexImg}
           alt="fusionex"
           class="h-12 w-12 rounded-full object-scale-down"
+          transition:name="fusionex"
         />
       )
     }
