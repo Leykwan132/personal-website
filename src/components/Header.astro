@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 
 import removeTrailingSlash from "@/utils/removeTrailingSlash";
 import presentation from "@/data/presentation";
@@ -31,6 +31,16 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
             ["hover:text-neutral-100"]: true,
             ["text-neutral-100"]: pathname === "/posts",
           }}>Posts</a
+        >
+      </li>
+      <li>/</li>
+      <li>
+        <a
+          href="/works"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/works",
+          }}>Works</a
         >
       </li>
     </ul>
