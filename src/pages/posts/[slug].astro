@@ -1,5 +1,7 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
+import { fade } from "astro:transitions";
+
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
@@ -21,7 +23,10 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <main class="post mx-auto flex w-full max-w-prose flex-col gap-4">
+  <main
+    class="post mx-auto flex w-full max-w-prose flex-col gap-4"
+    transition:animate={fade({ duration: "0.6s" })}
+  >
     <header role="presentation">
       <h1 class="text-md">
         {post.data.title} - {formatDate(post.data.publishedAt)}

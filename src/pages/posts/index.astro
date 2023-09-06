@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import { fade } from "astro:transitions";
+
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
@@ -9,7 +11,10 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 ---
 
 <Layout title="Template - All Posts">
-  <main class="flex flex-col gap-20">
+  <main
+    class="flex flex-col gap-20"
+    transition:animate={fade({ duration: "0.6s" })}
+  >
     <h1 class="text-2xl text-neutral-100">My Sharings</h1>
 
     <article class="flex flex-col gap-4">
