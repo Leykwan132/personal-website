@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 import removeTrailingSlash from "@/utils/removeTrailingSlash";
 import presentation from "@/data/presentation";
 
@@ -33,4 +35,5 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
       </li>
     </ul>
   </nav>
+  <ViewTransitions />
 </header>
