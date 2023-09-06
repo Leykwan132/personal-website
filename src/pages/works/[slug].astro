@@ -1,0 +1,31 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import formatDate from "@/utils/formatDate";
+
+export async function getStaticPaths() {
+  const works = await getCollection("works");
+
+  return works.map((work) => ({
+    params: { slug: work.slug },
+    props: { work },
+  }));
+}
+
+type Props = {
+  work: CollectionEntry<"works">;
+};
+
+const { work } = Astro.props;
+const { Content } = await work.render();
+---
+
+<Layout title={work.data.title} description={work.data.description}>
+  <main class="post mx-auto flex w-full max-w-prose flex-col gap-4">
+    <header role="presentation">
+      <p class="italic">{work.data.description}</p>
+    </header>
+
+    <Content />
+  </main>
+</Layout>

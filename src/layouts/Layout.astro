@@ -4,6 +4,7 @@ import BlurCircle from "@/components/shared/BlurCircle.astro";
 import theme from "@/data/theme";
 import SEOTags from "@/components/seo/SEOTags.astro";
 import type { HeadTags } from "@/utils/types/HeadTags";
+import { fade } from "astro:transitions";
 
 import "@fontsource/open-sans";
 import "@/styles/tailwind.css";
@@ -20,6 +21,7 @@ const headTags = Astro.props;
 
   <body
     class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
+    transition:animate={fade({ duration: "0.5s" })}
   >
     <Header />
     <BlurCircle position="top" color={theme.colors.blur.top} />
