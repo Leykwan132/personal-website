@@ -20,11 +20,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 const works = await getCollection("works");
 ---
 
-<Layout>
-  <main
-    class="flex flex-col gap-20"
-    transition:animate={fade({ duration: "0.6s" })}
-  >
+<Layout transition:animate={fade({ duration: "0.6s" })}>
+  <main class="flex flex-col gap-20">
     <article
       class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
     >
