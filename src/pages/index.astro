@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { fade } from "astro:transitions";
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
@@ -20,7 +21,10 @@ const works = await getCollection("works");
 ---
 
 <Layout>
-  <main class="flex flex-col gap-20">
+  <main
+    class="flex flex-col gap-20"
+    transition:animate={fade({ duration: "0.6s" })}
+  >
     <article
       class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
     >
