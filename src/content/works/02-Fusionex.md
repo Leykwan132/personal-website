@@ -6,49 +6,27 @@ slug: "fusionex"
 isPublish: true
 ---
 
-## Vocesque meum remis est neque Neptunus monte
+## Company Overview
 
-Lorem markdownum nunc _adfuit_ fecisse, `quae pectus`, quod seu mortale suo
-Minerva iussit obortas. Favilla victa; alarum signis barbara, nec _sibi dentes_
-hostes?
+Fusionex is a prominent <span style="color:red">data technology provider</span>, specializing in Analytics, Big Data, Machine Learning, and Artificial Intelligence.
 
-## Corporibus Leucon
+_Company's Linkedin Profile: [Fusionex](https://www.linkedin.com/company/fusionex-group/)_
 
-Quaeque viridis, pariter possit. Velatus Thetis, ab Buten, in et ite positis
-annis ut Troasque altaque. Ancaeus convertit conscia Phinea petis. Dum rapto
-fameque quas: hostis: et exiguo exire materiaque sit non, numinis unguibus fide.
-Populis in tinxi **nisi** rura deos quo natus in cervice spretis, vulnera
-pictae, vatibus.
+I worked with the Software team to develop <span style="color:red">inhouse software / Fusionex Giant</span> for our clients.
 
-> Illi tenebras si vultum suae. Matrem iam: iniqua adire, tetigere meque,
-> cessant, gerebat.
+## Product I work on
 
-## Montes ignarus precor rogabam primus ridet sanguine
+<img src="https://d2s4xhajrfg28u.cloudfront.net/assets/images/da376ca79b0bfe4f3597daebfd2710ac-image.png" alt="drawing" width="400px"/>
 
-In vir indefessus et patrios veniam. Fuit fecere nymphae putri tumebat Cyparisse
-domus, ad artus vitta herba? Et gaudet pressum aeterna animam. Miratur tamen ad
-frontem Hercule nam captivarumque medio tenet obstantia pulsisque adimit bella
-_pthiam mirantur ne_.
+_More details here: [Fusionex Giant](https://www.fusionexgiant.com/)_
 
-> Lacertis et nomenque oracla exstabat: genitor nitor! Fluctus habes extinctum.
-> Hunc utero iussa ora neque quae trunca tenuit coniciunt passis viro latratu
-> nepotum, spes. Et pendet mittor si expellam retia Achivis Aesonius cuius;
-> pressit exstinctique rogum enim, percutit potenti; quid longa. Nostra animaque
-> genetrice viae, quam virus sermone in videri.
+## My Role
 
-## Rapit harundine vana
+- Involved in design, coding, testing, and deployment of inhouse software with Vue JS.
+- Implemented reusable and scalable code and components.
+- Practised Agile Project Management and Biweekly Sprint Management.
 
-Noctis et et carpis corpus amplexus; imagine indignanda pedum sospes; cornua
-super **et simus**. Emissi bellaque dedit, ipse suis Romanique sit regia est
-virisque verum: _parentum omen_. Simul adest quam dat inanes verterat ab quies,
-visent melliferarum vestibus dolore.
+## Lesson Learned
 
-Vos illo in habet, ipse est suo fuit, solidissima invecta moverent [si] pericula
-ea pelle te quatiens proditus. Requiemque nec et fruticumque destringere
-divulsaque [multae requirit primi] supposita, turbatusque lacus, quondam;
-hectora pendebat verba. Magni Euagrum arcus sequentis vidi: qui Meropisque
-adplicat relinquentur inter, si pete. Magna constitit ore rediit et parentis
-pomaria lumina seque aura.
-
-[multae requirit primi]: http://heu.io/
-[si]: http://infelixlucina.net/mutati
+- Be ready to learn new technology
+- Time management is key
