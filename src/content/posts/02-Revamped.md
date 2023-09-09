@@ -25,7 +25,7 @@ _Some really cool websites: [Jxian.Dev](https://jxian.dev/), [Codenanshu](https:
 
 ### Did I code it from scratch?
 
-The short answer is no. I did not have a good sense of design. Full credits goes to the [MaeWolff](https://github.com/MaeWolff/astro-portfolio-template).
+The short answer is no. I did not have a good sense of design. Full credits goes.
 
 I did some **cool** changes to the original and will be sharing it in the future!
 
