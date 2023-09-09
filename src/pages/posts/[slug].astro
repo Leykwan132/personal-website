@@ -1,9 +1,12 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
 import { fade } from "astro:transitions";
+import { Image } from "astro:assets";
+import react from "@astrojs/react";
 
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
+import {Divider} from "@nextui-org/divider";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -27,15 +30,56 @@ const { Content } = await post.render();
     class="post mx-auto flex w-full max-w-prose flex-col gap-4"
     transition:animate={fade({ duration: "0.3s" })}
   >
-    <header role="presentation">
-      <h1 class="text-md">
-        {post.data.title} - {formatDate(post.data.publishedAt)}
+  <header role="presentation" class="mb-4">
+    <div class="flex flex-col justify-between items-start gap-4">
+      <h1 class="mb-2">
+        {formatDate(post.data.publishedAt)}
       </h1>
-      <p class="italic">{post.data.description}</p>
-    </header>
-
+      <p class="text-3xl text-white font-bold">
+        {post.data.title}
+      </p>
+      <p>{post.data.description}</p>
+    
+    </div>
+  </header>
+  <Divider className="  bg-neutral-600" />
+  <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-4">
+      <Image
+      src="https://media.licdn.com/dms/image/D5603AQFSpicnUOTQeg/profile-displayphoto-shrink_800_800/0/1677034734093?e=1699488000&v=beta&t=O-CSXabaV6fpEQjsgFCat1rEnb48iqTIEPAgXIgwyeo"
+      alt="ffc"
+      width="48"
+      height="48"
+      class="h-12 w-12 rounded-full object-scale-down "
+      transition:name="ffc"
+    />
+    <div class="flex flex-col">
+      <p class="text-lg font-bold text-white">Ley Kwan Choo</p>
+      <p class="text-white font-light">Software Engineer at K</p>
+    </div>
+    </div>
+  </div>
+  <Divider className=" bg-neutral-600" />
     <Content />
-    <div class="mt-8 flex justify-between">
+    <div class="flex flex-col gap-2 my-8">
+      <p class="font-medium text-white">Written by</p>
+      <div class="flex items-center gap-4">
+        <Image
+        src="https://media.licdn.com/dms/image/D5603AQFSpicnUOTQeg/profile-displayphoto-shrink_800_800/0/1677034734093?e=1699488000&v=beta&t=O-CSXabaV6fpEQjsgFCat1rEnb48iqTIEPAgXIgwyeo"
+        alt="ffc"
+        width="48"
+        height="48"
+        class="h-12 w-12 rounded-full object-scale-down "
+        transition:name="ffc"
+      />
+      <div class="flex flex-col">
+        <p class="text-lg font-bold text-white">Ley Kwan Choo</p>
+        <p class="text-white font-light">Software Engineer at K</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="flex justify-between">
       <a href="/">{"<- Back to Home"}</a>
       <a href="/posts">{"Show all other posts ->"}</a>
     </div>
