@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import { SITE_URL } from "./src/data/config";
+import vercel from "@astrojs/vercel/serverless";
 
 import react from "@astrojs/react";
 
@@ -13,7 +14,9 @@ export default defineConfig({
     syntaxHighlight: "shiki",
     shikiConfig: {
       theme: "nord",
-      wrap: false
-    }
-  }
+      wrap: false,
+    },
+  },
+  output: "server",
+  adapter: vercel({ analytics: true }),
 });
