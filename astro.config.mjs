@@ -16,6 +16,5 @@ export default defineConfig({
       wrap: false,
     },
   },
-  output: "server",
   adapter: vercel({ analytics: true }),
 });
