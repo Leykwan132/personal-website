@@ -53,8 +53,11 @@ const works = await getCollection("works");
           /> -->
           <iframe
             class="self-center md:hidden"
+            width="200px"
+            height="200px"
             src="https://lottie.host/?file=183af9ee-fec9-4f8d-8030-732b4b8a2fad/CdoPeqFrxy.json"
           ></iframe>
+
           <h2
             class="w-auto max-w-[60ch] leading-6"
             set:html={convertAsteriskToStrongTag(presentation.description)}
