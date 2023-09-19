@@ -28,7 +28,7 @@ const presentation: Presentation = {
     },
     {
       label: "Resume",
-      link: "https://www.slideshare.net/ChooLeyKwan1/mlresumedocxpdf",
+      link: "/ml_resume.pdf",
     },
   ],
 };
