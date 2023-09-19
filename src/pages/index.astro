@@ -44,13 +44,17 @@ const works = await getCollection("works");
           <h1 class="text-3xl text-neutral-100">
             {presentation.title}
           </h1>
-          <Image
+          <!-- <Image
             class="self-center md:hidden"
             src="/images/webanimation.gif"
             alt="drawing"
             width="200"
             height="40"
-          />
+          /> -->
+          <iframe
+            class="self-center md:hidden"
+            src="https://lottie.host/?file=183af9ee-fec9-4f8d-8030-732b4b8a2fad/CdoPeqFrxy.json"
+          ></iframe>
           <h2
             class="w-auto max-w-[60ch] leading-6"
             set:html={convertAsteriskToStrongTag(presentation.description)}
