@@ -12,6 +12,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import web from "public/animation.json";
 import { Image } from "astro:assets";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
@@ -26,7 +27,7 @@ const works = await getCollection("works");
     class="flex flex-col gap-20"
     transition:animate={fade({ duration: "0.3s" })}
   >
-    <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row md:justify-between">
       <article
         class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
       >
@@ -43,13 +44,13 @@ const works = await getCollection("works");
           <h1 class="text-3xl text-neutral-100">
             {presentation.title}
           </h1>
-          <iframe
-            class="md:hidden"
-            style="border: none"
-            width="290"
-            height="202"
-            src="https://lottie.host/?file=fe16db3b-4fb6-4483-a753-834b44fe96e2/Dz73PHD9Tn.json"
-            allowfullscreen></iframe>
+          <Image
+            class="self-center md:hidden"
+            src="/images/webanimation.gif"
+            alt="drawing"
+            width="200"
+            height="40"
+          />
           <h2
             class="w-auto max-w-[60ch] leading-6"
             set:html={convertAsteriskToStrongTag(presentation.description)}
@@ -58,13 +59,13 @@ const works = await getCollection("works");
           <SocialLinks />
         </div>
       </article>
-      <iframe
+      <Image
         class="hidden md:inline"
-        style="border: none"
-        width="320"
-        height="242"
-        src="https://lottie.host/?file=183af9ee-fec9-4f8d-8030-732b4b8a2fad/CdoPeqFrxy.json"
-      ></iframe>
+        src="/images/webanimation.gif"
+        alt="drawing"
+        width="200"
+        height="40"
+      />
     </div>
 
     <article class="flex flex-col gap-8">
