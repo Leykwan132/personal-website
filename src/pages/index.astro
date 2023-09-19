@@ -44,35 +44,25 @@ const works = await getCollection("works");
           <h1 class="text-3xl text-neutral-100">
             {presentation.title}
           </h1>
-          <!-- <Image
-            class="self-center md:hidden"
-            src="/images/webanimation.gif"
-            alt="drawing"
-            width="200"
-            height="40"
-          /> -->
           <iframe
-            class="self-center md:hidden"
-            width="200px"
-            height="200px"
-            src="https://lottie.host/?file=183af9ee-fec9-4f8d-8030-732b4b8a2fad/CdoPeqFrxy.json"
+            class="my-[-50px] self-center md:hidden"
+            width="300px"
+            height="300px"
+            src="https://lottie.host/?file=c72cc4af-0ef3-48c9-9e68-c5943e46ad7d/M3t6vn7OYO.json"
           ></iframe>
-
           <h2
             class="w-auto max-w-[60ch] leading-6"
             set:html={convertAsteriskToStrongTag(presentation.description)}
           />
-
           <SocialLinks />
         </div>
       </article>
-      <Image
-        class="hidden md:inline"
-        src="/images/webanimation.gif"
-        alt="drawing"
-        width="200"
-        height="40"
-      />
+      <iframe
+        class="my-[-50px] hidden md:inline"
+        width="300px"
+        height="300px"
+        src="https://lottie.host/?file=c72cc4af-0ef3-48c9-9e68-c5943e46ad7d/M3t6vn7OYO.json"
+      ></iframe>
     </div>
 
     <article class="flex flex-col gap-8">
