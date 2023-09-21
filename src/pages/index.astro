@@ -42,12 +42,15 @@ const works = await getCollection("works");
           <h1 class="text-3xl text-neutral-100">
             {presentation.title}
           </h1>
-          <iframe
+          <dotlottie-player
             class="my-[-50px] self-center md:hidden"
-            width="300px"
-            height="300px"
-            src="https://lottie.host/?file=c72cc4af-0ef3-48c9-9e68-c5943e46ad7d/M3t6vn7OYO.json"
-          ></iframe>
+            autoplay
+            loop
+            mode="normal"
+            src="public/anime1.lottie"
+            style="width: 300px"
+          >
+          </dotlottie-player>
           <h2
             class="w-auto max-w-[60ch] leading-6"
             set:html={convertAsteriskToStrongTag(presentation.description)}
@@ -55,12 +58,16 @@ const works = await getCollection("works");
           <SocialLinks />
         </div>
       </article>
-      <iframe
+
+      <dotlottie-player
         class="mx-[-40px] my-[-50px] hidden md:inline"
-        width="300px"
-        height="300px"
-        src="https://lottie.host/?file=c72cc4af-0ef3-48c9-9e68-c5943e46ad7d/M3t6vn7OYO.json"
-      ></iframe>
+        autoplay
+        loop
+        mode="normal"
+        src="public/anime1.lottie"
+        style="width: 300px"
+      >
+      </dotlottie-player>
     </div>
 
     <article class="flex flex-col gap-8">
